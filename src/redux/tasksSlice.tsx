@@ -1,6 +1,16 @@
 import {createSlice} from '@reduxjs/toolkit';
 
-const initialState = {
+type InitialStateType = {
+  id: number;
+  title: String;
+  done: boolean;
+};
+
+type TaskType = {
+  tasks: InitialStateType[];
+};
+
+const initialState: TaskType = {
   tasks: [],
 };
 

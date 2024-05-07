@@ -51,10 +51,6 @@ export const TaskItem: React.FC<TaskItemProps> = ({
             value={editingTaskText}
             onSubmitEditing={handleSubmitEditing}
             onBlur={() => setIsEditing(false)}
-            selection={{
-              start: editingTaskText.length,
-              end: editingTaskText.length,
-            }}
           />
         </TouchableOpacity>
       </View>
